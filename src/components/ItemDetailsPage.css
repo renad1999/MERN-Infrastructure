@@ -1,0 +1,40 @@
+
+.item-container {
+  
+  }
+  
+  .buttonsnew {
+   
+  }
+  
+  .buttonsnew button {
+
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: burlywood;
+    border-radius: 4px;
+    cursor: pointer;
+    color:black;
+  }
+  
+  .buttonsnew button:hover {
+    /* Hover styles */
+    background-color: beige
+  }
+  
+  .delete-button {
+    /* Delete button styles */
+    color: red;
+  }
+  
+  .update-link {
+
+    color: black;
+    text-decoration: none;
+  }
+  
+  .update-link:hover {
+   
+  }
+  

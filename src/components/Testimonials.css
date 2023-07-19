@@ -1,0 +1,30 @@
+
+.testimonials-section {
+
+  }
+  
+  .testimonials-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px; 
+  }
+  
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .testimonial-image img {
+    width: 150px; 
+    border-radius: 50%; 
+
+  }
+  
+  .testimonial-review {
+    text-align: center;
+    gap: 10px
+  
+  }
+  

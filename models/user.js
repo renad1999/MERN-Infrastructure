@@ -16,14 +16,16 @@ const userSchema = new Schema({
   password: {
     type: String,
     required: true
-  }
+  },
+  wishlist:[{type: mongoose.Schema.Types.ObjectId, ref: "Item"}]
 }, {
   timestamps: true,
   toJSON: {
     transform: function(doc, ret) {
       delete ret.password;
       return ret;
-    }
+    }, 
+   
   }
 });
 

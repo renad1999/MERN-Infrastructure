@@ -1,0 +1,62 @@
+/* Add this CSS to your existing stylesheet or create a new CSS file */
+
+.items-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .product-details {
+    display: flex; /* Set the display to flex to make each item appear in a row */
+    align-items: center; /* Center the content vertically */
+    margin-bottom: 10px;
+  }
+  
+  .allitems-img {
+    margin-right: 20px;
+  }
+  
+  .item-container {
+    flex: 1; /* Allow each item to take up equal space in the row */
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .item-container p {
+    margin: 5px 0;
+  }
+  
+  .buttonsnew {
+    display: flex;
+    justify-content: space-between;
+    color:blueviolet
+  }
+  
+  .wishlist button {
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .wishlist .heart {
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: red; /
+  }
+  
+  .wishlist .heart.pressed {
+    color: darkred; 
+  }
+
+  .item-name,
+.item-price {
+  font-family: "Helvicta", sans-serif; 
+  font-size: 18px; 
+  font-weight: bold; 
+  color:red
+
+}

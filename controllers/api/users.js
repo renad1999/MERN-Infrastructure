@@ -5,8 +5,40 @@ const User = require('../../models/user');
 module.exports = {
   create,
   login,
-  checkToken
+  checkToken,
+  addToWishlist, 
+  index
 };
+ 
+async function addToWishlist(req, res) {
+  try {
+    const {itemId} = req.params
+    const user = await User.findById(req.user._id)
+    const inWishlist = user.wishlist.includes(itemId)
+    if (!inWishlist ) {
+      user.wishlist.push(itemId)
+      await user.save();
+    }
+    return res.json(user.wishlist) 
+  
+  } catch (err) {
+    console.log(err)
+    res.status(400).json(err);
+  }
+}
+
+
+async function index(req, res) {
+  try {
+    const user = await User.findById(req.user._id);
+    return res.json(user.wishlist); 
+  } catch (err) {
+    console.log(err);
+    return res.status(400).json(err);
+  }
+}
+
+
 
 function checkToken(req, res) {
   console.log('req.user', req.user);

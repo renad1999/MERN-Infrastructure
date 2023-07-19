@@ -12,3 +12,12 @@ export async function login(credentials) {
 export async function checkToken() {
   return sendRequest(`${BASE_URL}/check-token`);
 }
+
+export async function addToWishlist(id) {
+  return sendRequest(`${BASE_URL}/wishlist/${id}`, 'PUT');
+}
+
+// new
+export async function index(id) {
+  return sendRequest(`${BASE_URL}/wishlist/page`, 'PUT');
+}
