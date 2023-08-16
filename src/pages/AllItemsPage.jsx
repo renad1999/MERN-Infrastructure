@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import * as itemsAPI from '../utilities/items-api';
 import { Link } from "react-router-dom";
-import Wishlist from "../components/Wishlist";
+// import Wishlist from "../components/Wishlist";
 
 export default function AllItems() {
   const [clothingItems, setItems] = useState([]);

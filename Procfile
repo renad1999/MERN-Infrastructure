@@ -1,1 +1,1 @@
-web: node server.js
+web: node server.jsheroku create <optional_preferred_subdomain>
